@@ -1,0 +1,18 @@
+% Specify more fonts (Italic, etc.) as needed.
+\setfontface\fjp{Noto Sans CJK JP}[
+    BoldFont={Noto Sans CJK JP Bold},
+]
+\XeTeXinterchartokenstate=1
+\chardef\CharNormal=0
+
+% Test for old and new versions of the latex kernel
+\makeatletter
+\ifx\e@alloc@intercharclass@top\@undefined
+    \chardef\CharBound=255
+\else
+    \chardef\CharBound=\e@alloc@intercharclass@top
+\fi
+\makeatother
+
+\input{no_break_before}
+\input{no_break_after}
