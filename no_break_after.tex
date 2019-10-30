@@ -1,0 +1,22 @@
+\newXeTeXintercharclass\noBreakAfter
+\XeTeXcharclass`（=\noBreakAfter
+\XeTeXcharclass`［=\noBreakAfter
+\XeTeXcharclass`｛=\noBreakAfter
+\XeTeXcharclass`〔=\noBreakAfter
+\XeTeXcharclass`〈=\noBreakAfter
+\XeTeXcharclass`《=\noBreakAfter
+\XeTeXcharclass`「=\noBreakAfter
+\XeTeXcharclass`『=\noBreakAfter
+\XeTeXcharclass`【=\noBreakAfter
+\XeTeXcharclass`〘=\noBreakAfter
+\XeTeXcharclass`〖=\noBreakAfter
+\XeTeXcharclass`〞=\noBreakAfter
+\XeTeXcharclass`｟=\noBreakAfter
+
+\newtoks\NoBreakAfterFont
+% \NoBreakAfterFont={\begingroup\fjp\color{blue}} % Visualize in blue.
+\NoBreakAfterFont={\begingroup\fjp}
+\XeTeXinterchartoks\CharNormal\noBreakAfter=\NoBreakAfterFont
+\XeTeXinterchartoks\noBreakAfter\CharNormal={\nolinebreak\endgroup}
+\XeTeXinterchartoks\CharBound\noBreakAfter=\NoBreakAfterFont
+\XeTeXinterchartoks\noBreakAfter\CharBound={\nolinebreak\endgroup}
